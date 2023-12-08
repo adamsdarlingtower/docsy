@@ -21,7 +21,8 @@
         // Register handler
         //
 
-        $searchInput.on('change', (event) => {
+      //$searchInput.on('change', (event) => {
+      $searchInput.on('input', (event) => {
             render($(event.target));
 
             // Hide keyboard on mobile browser
