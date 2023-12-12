@@ -10,11 +10,11 @@
     // Register handler
     //
 
-    $searchInput.on('change', (event) => {
+    $searchInput.on('input', (event) => {
       render($(event.target));
 
       // Hide keyboard on mobile browser
-      $searchInput.blur();
+      // $searchInput.blur();
     });
 
     // Prevent reloading page by enter key on sidebar search.
