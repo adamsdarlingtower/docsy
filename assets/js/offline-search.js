@@ -54,7 +54,7 @@
         });
       });
 
-      $searchInput.trigger('change');
+      $searchInput.trigger('input');
     });
 
     const render = ($targetSearchInput) => {
@@ -167,7 +167,7 @@
       $targetSearchInput.one('shown.bs.popover', () => {
         $('.td-offline-search-results__close-button').on('click', () => {
           $targetSearchInput.val('');
-          $targetSearchInput.trigger('change');
+          $targetSearchInput.trigger('input');
         });
       });
 
